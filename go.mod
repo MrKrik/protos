@@ -1,5 +1,4 @@
-module protos
-
+module github.com/MrKrik/protos
 go 1.24.2
 
 require (
