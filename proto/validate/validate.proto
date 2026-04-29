@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package validate;
+
+option go_package = "simplechat.validateToken.v1;validate";
+
+service ValidateService {
+    rpc ValidateToken(ValidateTokenRequest) returns (ValidateTokenResponse);
+}
+
+
+message ValidateTokenResponse{
+    bool success = 1;
+}
+
+ message ValidateTokenRequest{
+    string token = 1;
+ }
